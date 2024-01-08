@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="about.css">
+        
+    </head>
+    <body>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/image2.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p class="Heading">I'm Sindhuja from Medak district of Telangana.I completed my Graduation in Sreenidhi 
+                            institute of science and Technology in Electronics and Communication Engineering.
+                            I Completed the projects on Heart Disease prediction using machine learning and 
+                            Shifter design in VHDL.I have Hands on working on C,python,Sql and linux programming.
+                            So,In my Btech my overall percentage is 8.8CGPA.My Strengths are working hard,Team skills,
+                            hardwork with smartwork.In spare time,I make myself to spend time with my friends and family
+                            members.My hobbies are reading comics,cooking,playing Badminton when i feel free </p>
+
+                            <div class="tab-title">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>UI/Ux</span><br>Designing Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Web Development</li>
+                                    <li><span>App Development</span><br>Building Android/ios apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2023 - Current</span><br>Working at Actalent</li>
+                                    <li><span>2020-2023</span><br>Completed internship in AWS clouds</li>
+                                    <li><span>2017-2020</span><br>Team lead in projects</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2017</span><br>Completed my 10th</li>
+                                    <li><span>2020</span><br>Diploma from GPW Medak</li>
+                                    <li><span>2023</span><br>Btech from SNIST Hyderabad</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontents of tabcontents){
+                    tabcontents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        </body>
+            
+        </html>
